@@ -1,0 +1,4 @@
+## Enfoque de soluciones
+
+-> Simulacion
+

@@ -1,7 +1,7 @@
 
 ## Capitulo 2: Analisis de complejidad
 
-Eficiente = *Tiempo* y Memoria
+Eficiente = **Tiempo** y Memoria
 
 El tiempo no se mide en seg sino en "unidades de tiempo"
 
@@ -59,4 +59,8 @@ Lectura y escritura (1)
 
 T(n) = 14
 O(n) = 1 👀
+
+
+# Complejidad Algoritmica
+
 
