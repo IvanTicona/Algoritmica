@@ -8,9 +8,7 @@ int main(){
   int miles=0;
   int startTime=0;
   
-  // while (cin>>n && n != -1)
-  // {
-    cin>>n;
+  while(cin>>n && n != -1){
     for (int i = 0; i < n; i++)
     {
       cin>>speed>>elapsedTime;
@@ -18,8 +16,10 @@ int main(){
       miles += (currentTime * speed);
       startTime = elapsedTime;
     }
-    cout<<miles<<" miles";
-  // }
+    cout<<miles<<" miles"<<endl;
+    miles = 0;
+    startTime = 0;
+  }
 
   return 0;
 }

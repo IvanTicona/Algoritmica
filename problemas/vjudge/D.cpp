@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int f(int n) {
+int collatz(int n) {
    int  result = 1;
     while(n != 1) {
       if(n % 2 == 0){  
@@ -25,7 +25,7 @@ int main () {
          b = temp;
         }
         for (int i = a; i <= b; i++) {
-            int r = f(i);
+            int r = collatz(i);
             mayor = max(r, mayor);
         }
         cout<<a<<" "<<b<<" "<<mayor<<endl;
