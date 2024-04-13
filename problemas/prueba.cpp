@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<int> days(0);
-vector<int> save(0);
+vector<int> savedDays(0);
 
 void coinsDays() {
   for (int i = 1; i <= 141; ++i) {
@@ -29,11 +29,17 @@ int main(){
   while(nblocks--){
     limit=21;
     while(limit-- && cin>>line && line!=0){
-      save.push_back(line);
+      savedDays.push_back(line);   
     }
+    savedDays.push_back(0);
   }
-  for (int i = 0; i < save.size(); ++i) {
-    cout<<save[i]<<" "<<getTotalCoins(save[i])<<"\n";
+  savedDays.pop_back();
+  for (int i = 0; i < savedDays.size(); ++i) {
+    if(savedDays[i] == 0){
+      cout<<endl;
+    } else{
+      cout<<savedDays[i]<<" "<<getTotalCoins(savedDays[i])<<endl;
+    }
   }
 
   return 0;
