@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-// #define input freeopen("input.txt","r",stdin);
-// #define output freeopen("output.txt","w",stdout);
+// #define input freopen("input.txt","r",stdin);
+// #define output freopen("output.txt","w",stdout);
 
 int main(){
   // input;
