@@ -59,15 +59,18 @@ Grafos
 - Cojunto de pares ordenados
 - Vertices, aristas
 - Dirigidos, no dirigidos
-
-- Pesados, no pesados
-- Ciclos, no ciclos
 - Conexo, no conexo
+<!-- Conexo es que todos los vertices estan conectados -->
+<!-- Busqueda en anchura = BFS -->
+<!-- Busqueda en profundidad = DFS -->
+
+<!-- - Pesados, no pesados
+- Ciclos, no ciclos
 - Aciclico, ciclico
 - Completo, no completo
 - Bipartito, no bipartito
 - Regular, no regular
-- Simple, no simple
+- Simple, no simple -->
 
 Representacion de grafos
 
