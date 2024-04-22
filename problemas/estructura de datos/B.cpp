@@ -1,44 +1,27 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int main() {
-    while (true) {
-        int s, b;
-        cin >> s >> b;
+int main(){
 
-        if (s == 0 && b == 0) {
-            break;
-        }
-
-        int left[100005], right[100005];
-
-        for (int i = 1; i <= s; i++) {
-            left[i] = i - 1;
-            right[i] = i + 1;
-        }
-
-        for (int i = 0; i < b; i++) {
-            int l, r;
-            cin >> l >> r;
-
-            if (left[l] > 0) {
-                cout << left[l] << " ";
-            } else {
-                cout << "* ";
-            }
-
-            if (right[r] <= s) {
-                cout << right[r] << endl;
-            } else {
-                cout << "*" << endl;
-            }
-
-            left[right[r]] = left[l];
-            right[left[l]] = right[r];
-        }
-
-        cout << "-" << endl;
+  int s, b;
+  while (cin>>s>>b){
+    if (!s&&!b) break;
+    vector<int> line(s);
+    for (int i = 0; i < s; i++){line[i] = i+1;}
+    while(b--){
+      int l,r;
+      cin>>l>>r;
+      int lindex = find(line.begin(),line.end(),l) - line.begin();
+      int rindex = find(line.begin(),line.end(),r) - line.begin();
+      string prevNum = lindex == 0 ? "*" : to_string(line[lindex-1]);
+      string nextNum = rindex == line.size()-1 ? "*" : to_string(line[rindex+1]);
+      for (int i = lindex; i <= rindex; i++){
+        line.erase(line.begin()+lindex);
+      }
+      cout<<prevNum<<" "<<nextNum<<endl;
     }
-
-    return 0;
+    cout<<"-"<<endl;
+  }
+  return 0;
 }
