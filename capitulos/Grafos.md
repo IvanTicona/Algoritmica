@@ -36,6 +36,25 @@ Pila,
 El recorrido depende de como se guarda en la lista
 Pila estatica o pila de la rama(recursividad)
 
+Stack= Estatica stack, Memoria recursividad
+
+```
+void DFS(int nodoInicial){
+  stack<int> pila;
+  pila.push(nodoInicial);
+  while(!pila.empty()){
+    int currentNode = pila.top();
+    pila.pop();
+    vis[currentNode] = true;
+    for(int i=0; i<grafo[currentNode].size(); i++){
+      int vecino = grafo[currentNode][i];
+      if(!vis[vecino]){
+        pila.push(vecino);
+      }
+    }
+  }
+}
+```
 
 - BFS
 Cola
