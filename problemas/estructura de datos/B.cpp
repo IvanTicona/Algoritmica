@@ -14,10 +14,12 @@ int main(){
       cin>>l>>r;
       int lindex = find(line.begin(),line.end(),l) - line.begin();
       int rindex = find(line.begin(),line.end(),r) - line.begin();
+
       string prevNum = lindex == 0 ? "*" : to_string(line[lindex-1]);
       string nextNum = rindex == line.size()-1 ? "*" : to_string(line[rindex+1]);
+
       for (int i = lindex; i <= rindex; i++){
-        line.erase(line.begin()+lindex);
+        line.erase(line.begin()+lindex); //con el lindex porque se realiza el resize
       }
       cout<<prevNum<<" "<<nextNum<<endl;
     }
