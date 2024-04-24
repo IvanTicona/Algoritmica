@@ -55,7 +55,29 @@ void DFS(int nodoInicial){
   }
 }
 ```
+Ventajas:
+- Facil de implementar
+- Menos memoria
 
-- BFS
-Cola
+- BFS: Recorrido en anchura
+Cola,
 
+```
+void BFS(int nodoInicial){
+  queue<int> cola;
+  cola.push(nodoInicial);
+  while(!cola.empty()){
+    int currentNode = cola.front();
+    cola.pop();
+    vis[currentNode] = true;
+    for(int i=0; i<grafo[currentNode].size(); i++){
+      int vecino = grafo[currentNode][i];
+      if(!vis[vecino]){
+        cola.push(vecino);
+      }
+    }
+  }
+}
+```
+
+Cual es el camino mas corto entre dos nodos?

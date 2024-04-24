@@ -19,7 +19,7 @@ int main(){
       string nextNum = rindex == line.size()-1 ? "*" : to_string(line[rindex+1]);
 
       for (int i = lindex; i <= rindex; i++){
-        line.erase(line.begin()+lindex); //con el lindex porque se realiza el resize
+        line.erase(line.begin()+lindex);
       }
       cout<<prevNum<<" "<<nextNum<<endl;
     }
