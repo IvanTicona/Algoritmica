@@ -22,11 +22,16 @@ void BFS(int nodoInicial){
     //empezamos a visitar a sus amigos
     for (int i = 0; i < grafo[nodoActual].size(); i++){
       int amigo = grafo[nodoActual][i];
-      niveles[amigo] = niveles[nodoActual]+1; //nivel del amigo es el nivel del nodo actual + 1
       if (!vis[amigo]){ //si el amigo no ha sido visitado
+      
+        niveles[amigo] = niveles[nodoActual]+1; //nivel del amigo es el nivel del nodo actual + 1
         cola.push(amigo); //lo agregamos a la pila
       }
     }
+    for (int i = 0; i < 9; i++){
+      cout<<niveles[i]<<" ";
+    }
+    cout<<endl;
   }
 }
 
