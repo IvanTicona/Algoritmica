@@ -16,7 +16,7 @@ void BFS(int nodoInicial){
   cola.push(nodoInicial);
   while(!cola.empty()){ //la cola no esta vacia?
     int nodoActual = cola.front(); //obtenemos el primer elemento de la cola
-    cola.pop(); //eliminamos el primer elemento de la pila
+    cola.pop(); //eliminamos el primer elemento de la cola
     if(vis[nodoActual]) continue; //marcamos el nodo como visitado
     vis[nodoActual] = true; //marcamos el nodo como visitado
     //empezamos a visitar a sus amigos

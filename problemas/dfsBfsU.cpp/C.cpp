@@ -2,8 +2,8 @@
 
 using namespace std;
 
-bool vis[101][101];
-vector<string> grafo(101,"");
+bool vis[100][100];
+vector<string> grafo(100,"");
 
 int vx[]={1,1,0,-1,-1,-1,0,1};
 int vy[]={0,1,1,1,0,-1,-1,-1};
@@ -23,26 +23,25 @@ void dfs(int xn, int yn, int n, int m, int &pixels){
 }
 
 int main(){
-  int m,n;
-  while(cin>>m>>n && m){
+  int row,col;
+  while(cin>>row>>col && row){
     memset(vis,false,sizeof(vis));
-    for (int i = 0; i < m; i++){
+    for (int i = 0; i < row; i++){
       grafo[i] = "";
     }
-    for (int i = 0; i < m; i++){
+    for (int i = 0; i < row; i++){
       cin>>grafo[i];
     }
     int stars=0;
-    for (int i = 0; i < m; i++){
-      for (int j = 0; j < n; j++){
+    for (int i = 0; i < row; i++){
+      for (int j = 0; j < col; j++){
 
         if (grafo[i][j] == '*' && !vis[i][j]){
           vis[i][j] = true;
-          int pixels = 1;
-          dfs(i,j,m,n,pixels);
-          if(pixels==1) stars++;
+          int pixels = 0;
+          dfs(i,j,row,col,pixels);
+          if(pixels=1) stars++;
         }
-
       }
     }
     cout<<stars<<endl;

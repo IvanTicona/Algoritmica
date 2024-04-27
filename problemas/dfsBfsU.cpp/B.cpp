@@ -8,36 +8,36 @@ vector<string> grafo(100,"");
 int vx[]={1,1,0,-1,-1,-1,0,1};
 int vy[]={0,1,1,1,0,-1,-1,-1};
 
-void dfs(int xn, int yn, int n, int m){
+void dfs(int xn, int yn, int row, int col){
 
   for (int i = 0; i < 8; i++){
     int x = vx[i]+xn;
     int y = vy[i]+yn;
 
-    if (x>=0 && x<n && y>=0 && y<m && !vis[x][y] && grafo[x][y] == '@'){
+    if (x>=0 && x<row && y>=0 && y<col && !vis[x][y] && grafo[x][y] == '@'){
       vis[x][y] = true;
-      dfs(x,y,n,m);
+      dfs(x,y,row,col);
     }
   }
 }
 
 int main(){
-  int m,n;
-  while(cin>>m>>n && m){
+  int row,col;
+  while(cin>>row>>col && row){
     memset(vis,false,sizeof(vis));
-    for (int i = 0; i < m; i++){
+    for (int i = 0; i < row; i++){
       grafo[i] = "";
     }
-    for (int i = 0; i < m; i++){
+    for (int i = 0; i < row; i++){
       cin>>grafo[i];
     }
     int deposits = 0;
-    for (int i = 0; i < m; i++){
-      for (int j = 0; j < n; j++){
+    for (int i = 0; i < row; i++){
+      for (int j = 0; j < col; j++){
         if (grafo[i][j] == '@' && !vis[i][j]){
           deposits++;
           vis[i][j] = true;
-          dfs(i,j,m,n);
+          dfs(i,j,row,col);
         }
       }
     }
