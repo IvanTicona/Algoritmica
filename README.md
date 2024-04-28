@@ -1,5 +1,5 @@
 
-# Algorítmica I - UPB
+<h1>Algorítmica I - UPB</h1>
 
 <div style="display: flex">
 <p style="margin-right: 5px">
