@@ -19,6 +19,6 @@ Al tratarse de un curso práctico, la mayoría de tu tiempo te la pasarás progr
 
 - Tu capacidad para abordar problemas se verá profundamente enriquecida a través de la práctica de pensamiento creativo y solución de problemas. Te enfrentarás a retos que demandarán soluciones ingeniosas y fuera de lo común, afilando tu habilidad para concebir estrategias eficientes y efectivas bajo un conjunto de restricciones estrictas.
 ___
-<img src="./algorithm.webp" align="left" height="200px"/>
+<img src="./algorithm.webp" align="left" height="210px"/>
 
 Las habilidades desarrolladas en este curso trascienden su aplicación inmediata, enriqueciendo tu desempeño académico en otros cursos dentro del currículo de Ingeniería de Sistemas Computacionales. Estas competencias son altamente valoradas por líderes de la industria del software, como Google, Facebook y Microsoft, reconociéndolas como cruciales para la innovación tecnológica y la resolución de problemas complejos. Además, estas habilidades no solo te abrirán puertas a oportunidades de empleo en empresas de prestigio, sino que también te proporcionarán una sólida base para una carrera profesional exitosa y en constante evolución en el campo de la tecnología.
