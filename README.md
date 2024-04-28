@@ -1,4 +1,3 @@
-
 <h1>Algorítmica I - UPB</h1>
 
 <div style="display: flex">
@@ -6,7 +5,7 @@
 Este curso intensivo está diseñado específicamente para equipar a los estudiantes con las habilidades y conocimientos necesarios para destacarse en competencias de programación competitiva de alto nivel, especialmente en la International Collegiate Programming Contest (ICPC) Bolivia. A través de este curso, los estudiantes se sumergirán en una rigurosa práctica semanal de problemas algorítmicos que reflejan la complejidad y el estilo de aquellos presentados en la ICPC, así como en entrevistas técnicas de empresas líderes en tecnología, como Amazon y Google.
 </p>
 
-<img src="./image.jpg" height="200px" style="margin-top: 5px; border-radius: 5px"/>
+<img src="./image.jpg" height="200px" align="right" top="500" style="margin-top: 5px; border-radius: 5px"/>
 </div>
 
 Con un fuerte énfasis en las estructuras de datos avanzadas, los algoritmos complejos y las técnicas de programación eficiente, este curso no solo prepara a los estudiantes para competir a nivel nacional en la ICPC Bolivia, sino que también los equipa con habilidades prácticas valoradas en la industria tecnológica. Al resolver desafiantes problemas de programación competitiva, los estudiantes afinarán su ingenio, mejorarán sus habilidades de programación y desarrollarán un profundo entendimiento de cómo aplicar teorías algorítmicas en escenarios del mundo real.
