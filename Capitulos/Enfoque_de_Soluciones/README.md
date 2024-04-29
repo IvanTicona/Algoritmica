@@ -1,4 +1,4 @@
-# Enfoque de soluciones
+# Capítulo 3: Enfoque de Soluciones
 
 ## Contenido
 
