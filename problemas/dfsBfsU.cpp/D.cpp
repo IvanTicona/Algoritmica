@@ -2,6 +2,9 @@
 
 using namespace std;
 
+#define input freopen("input.txt","r",stdin);
+#define output freopen("output.txt","w",stdout);
+
 vector<int> grafo[30];
 bool vis[30];
 int niveles[30];
@@ -81,6 +84,9 @@ void bfs(int nodoInicial){
 }
 
 int main(){
+
+  input;
+  output;
 
   set<int> nodes;
   int nc;
